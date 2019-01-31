@@ -1,0 +1,4 @@
+If you haven't added something to the Assets folder through Unity Editor, add it here.
+Then drag/drop it into Unity to work on these in the open Unity project.
+Use this folder to push out your assets if you're behind in pushing/pulling.
+This will make sure they get to the main repository on Github without merge errors in the project.
