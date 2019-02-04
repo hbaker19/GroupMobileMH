@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 1283393730}
   - component: {fileID: 1283393729}
   - component: {fileID: 1283393731}
+  - component: {fileID: 1283393732}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -580,7 +581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283393724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.05, y: 12.29, z: -0.03268863}
+  m_LocalPosition: {x: 4.63, y: 1.51, z: -0.03268863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1066145504}
@@ -641,6 +642,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1283393732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283393724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee46f3b132dd7674e9df8bb4eb11e56b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 10
 --- !u!1 &1564776992
 GameObject:
   m_ObjectHideFlags: 0
@@ -16978,9 +16992,9 @@ GameObject:
   - component: {fileID: 2019152748}
   - component: {fileID: 2019152750}
   - component: {fileID: 2019152749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
