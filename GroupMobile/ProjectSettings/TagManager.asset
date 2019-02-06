@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Heart
   - Enemy
+  - FallStop
   layers:
   - Default
   - TransparentFX
