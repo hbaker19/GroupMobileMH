@@ -6,8 +6,8 @@ public class MobileMovement : MonoBehaviour
 {
     public float moveSpeed = 1.0f;
     public float jumpSpeed = 1.0f;
-    private bool grounded = false;
-    private float moveDir = 0;
+    public bool grounded = false;
+    public float moveDir = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -52,26 +52,29 @@ public class MobileMovement : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 8)
-        {
+        if (collision.gameObject.layer == 8)
+        { 
+            GetComponent<Animator>().SetBool("Grounded", true);
             grounded = true;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
+            GetComponent<Animator>().SetBool("Grounded", false);
             grounded = false;
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 8)
         {
+            GetComponent<Animator>().SetBool("Grounded", true);
             grounded = true;
         }
     }

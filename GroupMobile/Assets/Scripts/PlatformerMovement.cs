@@ -24,6 +24,7 @@ public class PlatformerMovement : MonoBehaviour {
     {
         if(collision.gameObject.layer == 8)
         {
+            GetComponent<Animator>().SetBool("Grounded", true);
             grounded = true;
         }
     }
@@ -31,6 +32,7 @@ public class PlatformerMovement : MonoBehaviour {
     {
         if (collision.gameObject.layer == 8)
         {
+            GetComponent<Animator>().SetBool("Grounded", false);
             grounded = false;
         }
     }
@@ -38,6 +40,7 @@ public class PlatformerMovement : MonoBehaviour {
     {
         if (collision.gameObject.layer == 8)
         {
+            GetComponent<Animator>().SetBool("Grounded", true);
             grounded = true;
         }
     }
