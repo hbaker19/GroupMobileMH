@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    public string LeveltoLoad;
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Portal")
         {
             //Load next active scene
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene(LeveltoLoad);
             
         }
     }
