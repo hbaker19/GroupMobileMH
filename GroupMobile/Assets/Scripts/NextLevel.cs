@@ -10,6 +10,7 @@ public class NextLevel : MonoBehaviour
         if(collision.gameObject.tag == "Portal")
         {
             //Load next active scene
+            SceneManager.LoadScene("Level2");
             
         }
     }
