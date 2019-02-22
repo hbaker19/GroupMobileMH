@@ -10,15 +10,9 @@ public class Play : MonoBehaviour {
     SceneManager.LoadScene("DifficultyScreen");
 }
 
-    // Start is called before the first frame update
-    void Start()
+    public void ReturnToMenu()
     {
-        
+        SceneManager.LoadScene("MainMenu");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
