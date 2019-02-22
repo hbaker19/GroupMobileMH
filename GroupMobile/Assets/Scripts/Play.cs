@@ -1,9 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MenuButtons : MonoBehaviour
+public class Play : MonoBehaviour { 
+
+    public void Difficulty()
 {
+    SceneManager.LoadScene("DifficultyScreen");
+}
+
     // Start is called before the first frame update
     void Start()
     {

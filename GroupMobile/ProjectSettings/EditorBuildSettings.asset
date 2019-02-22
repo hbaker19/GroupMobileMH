@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1Hard.unity
     guid: 0878fe9461d31cd4ead5911aa06273d1
+  - enabled: 1
+    path: Assets/Scenes/DifficultyScreen.unity
+    guid: 5f3d5b173886ed34da945fa4341a2c66
   m_configObjects: {}
