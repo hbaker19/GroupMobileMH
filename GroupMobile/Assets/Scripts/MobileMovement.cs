@@ -8,12 +8,6 @@ public class MobileMovement : MonoBehaviour
     public float jumpSpeed = 1.0f;
     public bool grounded = false;
     public float moveDir = 0;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
