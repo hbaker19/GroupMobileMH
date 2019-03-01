@@ -12,16 +12,11 @@ public class AllMenuButtons : MonoBehaviour
         
     }
 
-    public void Resume()
+    public void TryAgain()
     {
-        Time.timeScale = 1;
-        GetComponent<Canvas>().enabled = false;
-    }
+        //Calls the scene from PlayerPrefs and sends player to that scene.
+        PlayerPrefs.GetString("Scene");
 
-    public void Restart()
-    {
-        Time.timeScale = 1;
-        Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
