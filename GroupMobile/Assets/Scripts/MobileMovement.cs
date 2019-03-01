@@ -26,16 +26,25 @@ public class MobileMovement : MonoBehaviour
     public void MoveRight()
     {
         moveDir = 1;
+        GetComponent<Animator>().SetFloat("X", moveDir);
+        GetComponent<Animator>().SetFloat("Y", 0);
+        GetComponent<Animator>().SetBool("Idle", false);
     }
 
     public void MoveLeft()
     {
         moveDir = -1;
+        GetComponent<Animator>().SetFloat("X", moveDir);
+        GetComponent<Animator>().SetFloat("Y", 0);
+        GetComponent<Animator>().SetBool("Idle", false);
     }
 
     public void Stop()
     {
         moveDir = 0;
+        GetComponent<Animator>().SetFloat("X", moveDir);
+        GetComponent<Animator>().SetFloat("Y", 0);
+        GetComponent<Animator>().SetBool("Idle", true);
     }
 
     public void Jump()
