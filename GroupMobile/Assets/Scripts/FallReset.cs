@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class FallReset : MonoBehaviour
 {
-    //Will reload scene if the player falls too far
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "FallStop")
         {
+            Scene scene = SceneManager.GetActiveScene();
+            PlayerPrefs.SetString("Scene", scene.name);
             SceneManager.LoadScene("Lose");
         }
     }
