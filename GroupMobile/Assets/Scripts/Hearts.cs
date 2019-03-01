@@ -22,4 +22,5 @@ public class Hearts : MonoBehaviour {
             Destroy(collision.gameObject);
         }
     }
+    
 }
