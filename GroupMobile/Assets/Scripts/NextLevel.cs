@@ -8,8 +8,8 @@ public class NextLevel : MonoBehaviour
     public string LeveltoLoad;
     void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject[] Hearts = gameObject.FindGameObjectsWithTag("Heart");
-        if(collision.gameObject.tag == "Portal" && Hearts.length == 0)
+        GameObject[] Hearts = GameObject.FindGameObjectsWithTag("Heart");
+        if(collision.gameObject.tag == "Portal" && Hearts.Length == 0)
         {
             //Load next active scene
             SceneManager.LoadScene(LeveltoLoad);
