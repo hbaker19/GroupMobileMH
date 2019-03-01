@@ -10,8 +10,7 @@ public class FallReset : MonoBehaviour
     {
         if(collision.gameObject.tag == "FallStop")
         {
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            SceneManager.LoadScene("Lose");
         }
     }
 }

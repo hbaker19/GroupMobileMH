@@ -27,11 +27,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Win.unity
     guid: d9f28c09b21895745ad63480e70f999d
   - enabled: 1
+    path: Assets/Scenes/Level1Hard.unity
+    guid: 0878fe9461d31cd4ead5911aa06273d1
+  - enabled: 1
     path: Assets/Scenes/Level2Hard.unity
     guid: 44cb34670127b2e4b980a954f08e214b
   - enabled: 1
-    path: Assets/Scenes/Level1Hard.unity
-    guid: 0878fe9461d31cd4ead5911aa06273d1
+    path: Assets/Scenes/Level3Hard.unity
+    guid: ac6ed1579c9184d41bb7b1c5d42d2e33
   - enabled: 1
     path: Assets/Scenes/DifficultyScreen.unity
     guid: 5f3d5b173886ed34da945fa4341a2c66
