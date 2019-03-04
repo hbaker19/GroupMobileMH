@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - FallStop
   - Portal
+  - Playtest
   layers:
   - Default
   - TransparentFX
