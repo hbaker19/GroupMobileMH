@@ -9,6 +9,7 @@ public class FallReset : MonoBehaviour
     {
         if(collision.gameObject.tag == "FallStop")
         {
+            //Will save active scene's name in PlayerPrefs
             Scene scene = SceneManager.GetActiveScene();
             PlayerPrefs.SetString("Scene", scene.name);
             SceneManager.LoadScene("Lose");

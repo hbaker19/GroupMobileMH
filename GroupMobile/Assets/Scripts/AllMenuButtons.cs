@@ -14,10 +14,9 @@ public class AllMenuButtons : MonoBehaviour
 
     public void TryAgain()
     {
-        //Calls the scene from PlayerPrefs and sends player to that scene.
-        PlayerPrefs.GetString("Scene");
-
-        SceneManager.LoadScene(scene.name);
+        //Calls the scene name from PlayerPrefs and sends player to that scene.
+        string level = PlayerPrefs.GetString("Scene");
+        SceneManager.LoadScene(level);
     }
 
     public void MainMenu()

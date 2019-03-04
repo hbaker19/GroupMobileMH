@@ -10,8 +10,10 @@ public class MobileHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            //Will save active scene's name in PlayerPrefs
             Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
+            PlayerPrefs.SetString("Scene", scene.name);
+            SceneManager.LoadScene("Lose");
         }
     }
 }
