@@ -364,6 +364,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5832776984491825276, guid: c040969950b791b4a8014437185e78e5,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.33748665
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832776984491825276, guid: c040969950b791b4a8014437185e78e5,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.7074386
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832776984491825276, guid: c040969950b791b4a8014437185e78e5,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.9056604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c040969950b791b4a8014437185e78e5, type: 3}
 --- !u!1 &158525254 stripped
@@ -974,9 +989,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7171306337756936853, guid: cc87604fa31e4544e8facd4e7801dd59,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171306337756936853, guid: cc87604fa31e4544e8facd4e7801dd59,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 910286440}
     - target: {fileID: 7171306336376572803, guid: cc87604fa31e4544e8facd4e7801dd59,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1400,6 +1420,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 031369687eb7b0f438ec8c4159cb8a37, type: 3}
+--- !u!114 &910286440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5472675454915310502, guid: 8eb26b4988429b542bb3367e89d1805b,
+    type: 3}
+  m_PrefabInstance: {fileID: 830965411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c167775842e6d9a43ad5d3ab4cb94c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &950484542
 PrefabInstance:
   m_ObjectHideFlags: 0
