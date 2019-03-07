@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     public string LeveltoLoad;
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject[] Hearts = GameObject.FindGameObjectsWithTag("Heart");
         if(collision.gameObject.tag == "Portal" && Hearts.Length == 0)
