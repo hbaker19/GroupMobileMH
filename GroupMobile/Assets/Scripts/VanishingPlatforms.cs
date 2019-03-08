@@ -24,14 +24,7 @@ public class VanishingPlatforms : MonoBehaviour
         {
             for (int i = 0; i < timedPlatforms.Length; i++)
             {
-                int r = Random.Range(0, 3);
-                if (r == 0)
-                {
-                    (timedPlatforms[i]).SetActive(false);
-                    break;
-                }
-
-                
+                (timedPlatforms[i]).SetActive(false);
             }
         }
 
